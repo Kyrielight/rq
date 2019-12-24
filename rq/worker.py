@@ -460,7 +460,7 @@ class Worker(object):
         completed_jobs = 0
         self.register_birth()
         self.log.info("Worker %s: started, version %s", self.key, VERSION)
-        LoggingUtils.info("Worker {}: started, version {}".format(self.key, VERSION))
+        #LoggingUtils.info("Worker {}: started, version {}".format(self.key, VERSION))
         self.set_state(WorkerStatus.STARTED)
         qnames = self.queue_names()
         self.log.info('*** Listening on %s...', green(', '.join(qnames)))
