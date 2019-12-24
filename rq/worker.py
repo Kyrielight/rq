@@ -464,7 +464,7 @@ class Worker(object):
         self.set_state(WorkerStatus.STARTED)
         qnames = self.queue_names()
         self.log.info('*** Listening on %s...', green(', '.join(qnames)))
-        LoggingUtils.info("*** Listening on {}...".format(', '.join(qnames)), color=LoggingUtils.LGREEN)
+        # LoggingUtils.info("*** Listening on {}...".format(', '.join(qnames)), color=LoggingUtils.LGREEN)
 
         try:
             while True:
